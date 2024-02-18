@@ -18,3 +18,15 @@ print(f"Tuple : ",tapal)
 
 calar = ["Red","Green","White","Black"]
 print(calar[0]+calar[-1])
+
+# Write a Python program to count the number 4 in a given list.
+
+def count_4(lizt):
+    counter = 0
+    for num in lizt:
+        if num==4:
+            counter+=1
+    print(counter)
+    return (lizt.count(4))
+
+print(count_4([1,4,2,5,5,8,4]))
