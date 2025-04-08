@@ -1,5 +1,5 @@
 '''You are given three integers x,y,z representing the dimensions of a cuboid along with an integer n.
-Print a list of all possible coordinates given by  on a 3D grid where the sum of  is not equal to n.
+Print a list of all possible coordinates given by  on a 3D grid where the sum of dimentions is not equal to n.
 Here, Please use list comprehensions rather than multiple loops, as a learning exercise.
 Sample Input 
 x = 1
