@@ -18,14 +18,50 @@ Example 3: Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 '''
 
-def containsDuplicate(nums: List[int]):
-    arr_set = {}
+def containsDuplicate(nums):
+    arr_set = set()
 
     for num in nums:
-        if num in nums:
+        if num in arr_set:
             break
         else:
             arr_set.add(num)
     else:
-        return False
-    return True
+        print("Only Unique Elements")
+        return
+    print("Duplicates exist")
+
+containsDuplicate([1,2,3,1])
+containsDuplicate([1,2,3,4])
+containsDuplicate([1,1,1,3,3,4,3,2,4,2])
+
+
+"""OUTPUT:
+
+Duplicates exist
+Only Unique Elements
+Duplicates exist
+"""
+
+#------------------------------------------------------------------------------------
+
+def alternate_way(nums):
+    list_size = len(nums)
+    set_size = len(set(nums))
+
+    if list_size == set_size:
+        print("Uniques")
+    else:
+        print("Duplicates")
+
+
+alternate_way([1,2,3,1])
+alternate_way([1,2,3,4])
+alternate_way([1,1,1,3,3,4,3,2,4,2])
+
+'''
+OUTPUT:
+Duplicates
+Uniques
+Duplicates
+'''
